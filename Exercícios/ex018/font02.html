@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'love';
+            src: url('fonts/love\ story.ttf') format('opentype'), url('fonts/love\ story.ttf') format('truetype'); /* Houve reptição de url para simular outro formato de font, mas usei um.
+            font-weight: normal;
+            font-style: normal;
+        
+            /*Tipos de format()
+            - opentype
+            - truetype
+            - embedded-opentype
+            - truetype-aat (Apple Advanced Typorgraphy)
+            - svg
+            */
+        }
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 3em;
+        }
+        h1{
+            font-family:'love', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur ratione nobis ipsum dolorem voluptate cum nisi aliquam! Quas deserunt laboriosam et eligendi tenetur earum quae officia saepe sit! Esse, officia.</p>
+</body>
+</html>

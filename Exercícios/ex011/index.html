@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente diminua o zoom no navegador.</p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">              <!--Carrega o tam P-->
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">           <!--Carrega o tam M-->
+        <img src="imagens/foto-g.png" alt="Imagem flexível"> ,                                      <!--Carrega o tam G-->
+        <!-- Para deixar a visualização dinâmica do usuário perante as plataformas, cria sempre o tam G por último
+         e as imagens menores é necessário criar os source acima na ordem descrita no código acima. Os 50px acrescentados no max-width é para evitar a barra de rolagem.-->
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+
+    <audio src="midia/09-bullet_for_my_valentine_-_dignity-ysp.mp3" controls autoplay></audio> <!-- MP3 - WAV - OGG -->
+
+    <p>Outra forma de reproduzir os áudios</p>
+    <audio controls autoplay>
+        <source src="midia/09-bullet_for_my_valentine_-_dignity-ysp.mp3" type="audio/mpeg">
+        <source src="midia/09-bullet_for_my_valentine_-_dignity-ysp.ogg" type="audio/ogg">
+        <source src="midia/09-bullet_for_my_valentine_-_dignity-ysp.wav" type="audio/wav">
+        <!-- Esses demais formatos são opções se precisar. Não vai aparecer no navegador
+        porque os arquivos nesse formato não existe, apenas mp3-->
+    </audio>
+</body>
+</html>

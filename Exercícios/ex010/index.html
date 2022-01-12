@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://www.instagram.com/vitushopb/">Instagram</a></p>
+
+    <p>Você pode acessar o meu <a href="https://www.instagram.com/vitushopb/" target="_blank" rel="external">Instagram</a></p>
+    <!-- O target abre o link em nova aba-->
+
+    <h1>Usando links internos</h1>
+    <p>Está é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" target="_self" rel="next">segunda página</a></p>
+    <!-- O atributo 'rel' referência semânticamente aquele link para próxima pag ou anterior. Existe mais opções, com valores -->
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self" rel="next">página de notícias</a></p>
+    <!-- O target="_self" significa abrir na própria aba. Usa se quiser quando a navegação é dentro do site-->
+
+    <h1>Links para Download</h1>
+    <ul type="square">
+        <li><a href="livro/ebook-precificacao-enp.pdf" download="livro.pdf" type="application/pdf">Baixar livro em PDF</a></li>
+        <li><a href="livro/ebook-precificacao-enp.7z" download="livro.zip" type="application/zim">Livro compactado em ZIP</a></li>
+        <!-- Existe uma lista parâmetros ou atributos para vários tipos de arquivos que podem baixar via navegador. Geralmente o pessoal zip o arquivo pra ficar padrão-->
+    </ul>
+</body>
+</html>
