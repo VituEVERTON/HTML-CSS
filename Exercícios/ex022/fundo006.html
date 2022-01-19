@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
 
     <style>
         body{
+            height: 100vh;
+            /*
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover; /* De todas as propriedades usa a que melhor se adaptar
-            é a cover.*/
+            background-size: cover;  De todas as propriedades usa a que melhor se adaptar
+            é a cover.
+            background-attachment: fixed;  Matem o conteúdo rolável e a imagem fixa
+            
+            Shorthand - background
+                color > image > position > repeat > [size] > attachment
+            */
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover; /* Não funciona na shorthand, então coloca fora */
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -29,7 +38,11 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga aperiam labore reiciendis. Dignissimos illum nihil doloribus, dolor recusandae facere rem, debitis repellendus exercitationem cupiditate harum similique itaque! Tempora, aspernatur libero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde delectus earum est sed impedit? Laboriosam, distinctio quia! Libero commodi obcaecati praesentium alias iure sunt voluptate voluptates quae cumque, tempore iusto!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, nihil doloremque sint odio exercitationem laboriosam facilis similique unde ratione earum quia sunt nulla numquam ullam cum rem vel suscipit dolorem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga aperiam labore reiciendis. Dignissimos illum nihil doloribus, dolor recusandae facere rem, debitis repellendus exercitationem cupiditate harum similique itaque! Tempora, aspernatur libero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde delectus earum est sed impedit? Laboriosam, distinctio quia! Libero commodi obcaecati praesentium alias iure sunt voluptate voluptates quae cumque, tempore iusto!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, nihil doloremque sint odio exercitationem laboriosam facilis similique unde ratione earum quia sunt nulla numquam ullam cum rem vel suscipit dolorem.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga aperiam labore reiciendis. Dignissimos illum nihil doloribus, dolor recusandae facere rem, debitis repellendus exercitationem cupiditate harum similique itaque! Tempora, aspernatur libero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde delectus earum est sed impedit? Laboriosam, distinctio quia! Libero commodi obcaecati praesentium alias iure sunt voluptate voluptates quae cumque, tempore iusto!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, nihil doloremque sint odio exercitationem laboriosam facilis similique unde ratione earum quia sunt nulla numquam ullam cum rem vel suscipit dolorem.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga aperiam labore reiciendis. Dignissimos illum nihil doloribus, dolor recusandae facere rem, debitis repellendus exercitationem cupiditate harum similique itaque! Tempora, aspernatur libero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde delectus earum est sed impedit? Laboriosam, distinctio quia! Libero commodi obcaecati praesentium alias iure sunt voluptate voluptates quae cumque, tempore iusto!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, nihil doloremque sint odio exercitationem laboriosam facilis similique unde ratione earum quia sunt nulla numquam ullam cum rem vel suscipit dolorem.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga aperiam labore reiciendis. Dignissimos illum nihil doloribus, dolor recusandae facere rem, debitis repellendus exercitationem cupiditate harum similique itaque! Tempora, aspernatur libero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde delectus earum est sed impedit? Laboriosam, distinctio quia! Libero commodi obcaecati praesentium alias iure sunt voluptate voluptates quae cumque, tempore iusto!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, nihil doloremque sint odio exercitationem laboriosam facilis similique unde ratione earum quia sunt nulla numquam ullam cum rem vel suscipit dolorem.
+        </p>
     </main>
 </body>
 </html>
